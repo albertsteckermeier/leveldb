@@ -186,6 +186,7 @@ target_sources(leveldb
     "${LEVELDB_PUBLIC_INCLUDE_DIR}/table.h"
     "${LEVELDB_PUBLIC_INCLUDE_DIR}/write_batch.h"
 )
+set_property(TARGET leveldb PROPERTY POSITION_INDEPENDENT_CODE ON)
 
 if (WIN32)
   target_sources(leveldb
